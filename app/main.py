@@ -9,8 +9,6 @@ def main():
     #
     server_socket = socket.create_server(("localhost", 6379))
     print("Server is listening on port 6379...")
-    server_socket.accept()  # Wait for client
-    
     connection, _ = server_socket.accept()
     print(connection, _)
     connection.sendall(b"+PONG\r\n")
