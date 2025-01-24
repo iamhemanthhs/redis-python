@@ -11,7 +11,7 @@ def main():
     print("Server is listening on port 6379...")
     connection, _ = server_socket.accept()
     print(connection, _)
-    connection.sendall(b"+PONG\r\n")
+    connection.sendall(b"+PONG\r\n") 
 
 
 if __name__ == "__main__":
