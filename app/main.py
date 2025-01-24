@@ -44,7 +44,8 @@ def main():
             if connection_should_be_closed:
                 connection.close()
                 print("Connection closed.")
-
+        print("COMPLETLY DONE WITH THE EXECUTION")
+        break
 
 if __name__ == "__main__":
     main()
